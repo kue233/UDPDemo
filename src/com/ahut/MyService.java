@@ -54,7 +54,7 @@ public class MyService extends Thread{
 				
 				for(ClientActivity clientActivity:mList) {
 					// send data to each client
-					
+					clientActivity.pushMessage(bean);
 				}
 				
 			} catch (IOException e) {
